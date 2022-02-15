@@ -20,4 +20,13 @@ public class User extends Model {
     @MaxSize(255)
     public String firma;
 
+    public User(String nombre, String password){
+        this.nombre = nombre;
+        this.firma = password;
+    }
+
+    public static User connect(String nombre, String password) {
+        return find("byNombreAndFirma", nombre, password).first();
+    }
+
 }
