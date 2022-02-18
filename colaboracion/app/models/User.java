@@ -29,36 +29,36 @@ public class User extends Model {
 
     public User(String nombre, String password){
         this.nombre = nombre;
-        this.firma = hasher(password);
-//        this.firma = hashPassword(password);
+        this.firma = password;
     }
 
-    private String getFirma(){
+    
+
+    public String getFirma(){
         return this.firma;
     }
 
+    public void setFirma(String password){
+        this.firma = hasher(password);
+    }
+
+
+
     public static User connect(String nombre, String password) {
-        /*boolean correctPass = false;
         String hashedPass = "";
         List<User> foundUsers = find("byNombre", nombre).fetch();
         for (User user : foundUsers) {
             String pass = user.getFirma();
             if (hashCheck(password, pass)){
-                correctPass = true;
                 hashedPass = pass;
                 break;
             }
         }
-        if (correctPass){*/
-            return find("byNombreAndFirma", nombre, password).first();
-        // }
-        // return null;
-
+        return find("byNombreAndFirma", nombre, hashedPass).first();
     }
 
 //    @PrePersist
     private String hasher(String password){
-        System.out.println("Estoy aqui");
         String hashedPass = BCrypt.hashpw(password, BCrypt.gensalt(12));
         return Base64.getEncoder().encodeToString(hashedPass.getBytes());
     }
