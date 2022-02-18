@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Chat</title>
+	</head>
+	
+	<body>
+		<h1>Chat</h1>
+		<script>
+			let socket = new WebSocket("ws://localhost:9000/echoSocket");
+			
+			document.forms.publish.onsubmit = function() {
+				let outgoingMessage = this.message.value;
+
+				socket.send(outgoingMessage);
+				return false;
+			};
+
+			// mensaje recibido - muestra el mensaje en div#messages
+			socket.onmessage = function(event) {
+				let message = event.data;
+
+				let messageElem = document.createElement('div');
+				messageElem.textContent = message;
+				document.getElementById('messages').prepend(messageElem);
+			}
+			
+			function showMessage(message) {
+				let messageElem = document.createElement('div');
+				messageElem.textContent = message;
+				document.getElementById('messages').prepend(messageElem);
+			}
+			
+			
+			
+			
+			
+			
+		</script>
+		
+		<form name="publish">
+		  <input type="text" name="message">
+		  <input type="submit" value="Enviar">
+		</form>
+		
+		<div id="messages"></div>
+		
+	</body>
+</html>
