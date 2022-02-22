@@ -2,3 +2,7 @@
 
 require:
     - play -> crud
+    - secure
+    - org.mindrot -> jbcrypt 0.3m
+    - play -> pdf 0.9   #-> Install locally first, more info at -> https://www.playframework.com/modules/pdf
+    # - play -> oauthclient

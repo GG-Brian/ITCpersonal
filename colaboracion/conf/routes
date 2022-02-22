@@ -16,9 +16,24 @@ GET     /public/                                staticDir:public
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
 
+<<<<<<< HEAD
 # Here's the import of the CRUD module in dependencies.yml
 *       /admin                            		module:crud
 
 WS   	/helloSocket            		  		MyWebSocket.hello
 
 WS   	/echoSocket            		  			MyWebSocket.echo
+=======
+
+
+# IMPORT OF THE CRUD MODULE
+*       /admin                            module:crud
+
+# IMPORT SECURE ROUTES FOR AUTH
+*       /                                 module:secure
+
+# WEBPAGE WHERE PDF IS GENERATED
+GET     /userpdf                                Application.report
+GET     /usermanagement                         Application.reportmanagement
+GET     /userallow                              Application.reportallow
+>>>>>>> b207e847636d9f08017e9e38f0334e7920992b7d

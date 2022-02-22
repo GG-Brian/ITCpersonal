@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <!-- <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}"> -->
+        <link rel="stylesheet" href="@{'/public/stylesheets/inforeports.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head>
+    <body>
+
+        <div id="center">
+            <h1 class="fancydarkblue">Guia de manipulación de datos de usuarios</h1>
+            <br>
+            <h3 class="fancydarkbluetext">Bienvenido sea a las instrucciones de manipulación de usuarios, este es un breve resumen de como se utiliza
+                la página web proporcionada por nuestra organización para crear, leer, actualizar y borrar usuarios en nuestra base de datos. 
+            </h3>
+
+
+            <br><br><br><br>
+            <h2 class="darkgrayfancy">Acceso a datos</h2>
+            <h4 class="darkgray justified">En '(nombre dominio corporativo)/admin' encontrarás una página que pide credenciales de acceso.
+                Si te hemos dado de alta en nuestra organización, deberías saber que credenciales ingresar aquí. Una vez dentro, deberías
+                poder visualizar la tabla de datos 'Users', desde aquí accedes a los datos.</h4>
+            <br>
+
+            <h2 class="fancyviolet">Lectura de datos</h2>
+            <h4 class="fancyviolettext justified">Siguiendo los pasos anteriores, deberías visualizar datos de los diferentes usuarios almacenados junto a su
+                información sensible, una barra de búsqueda para filtrar datos, botones de generación de informes (como el de esta guía) y poco más.
+            </h4>
+            <br>
+            <h2 class="fancygreen">Creación de datos</h2>
+            <h4 class="fancygreentext justified">Es probable que te hayas fijado en el botón verde de la esquina superior derecha que pone 'Add User'.
+                Presionando este botón te llevará a una interfaz gráfica amigable en la que ingresas los datos de un nuevo usuario en la base de datos.
+                Una vez hayas acabado, se te regresará a la pantalla anterior y podrás ver a tu usuario agregado correctamente.
+            </h4>
+            <br>
+            <h2 class="fancyblue">Actualización de datos</h2>
+            <h4 class="fancybluetext justified">En la lista de los usuarios de la base de datos, el primer dato sale subrayado indicando que se puede acceder
+                a éste. Presionando ahí te llevará a una pantalla amigable muy parecida a la vista en la creación de datos, en donde se te permitirá
+                editar al usuario seleccionar o deshacer la edición.
+            </h4>
+            <br>
+            <h2 class="fancyred">Borrado de datos</h2>
+            <h4 class="fancyredtext justified">Es posible que te hayas fijado en el botón rojo de la esquina superior derecha de la pantalla anterior y
+                con las palabras 'Delete User'. Desde la misma pantalla de edición de un usuario se puede eliminar dicho usuario con tan solo un click!
+                Hay que tener en cuenta que esta acción no es reversible.
+            </h4>
+        </div>
+        
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </body>
+</html>
