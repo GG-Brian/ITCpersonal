@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Informes de restricciones de uso</title>
+        <meta charset="${_response_encoding}">
+        <!-- <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/inforeports.css'}"> DA ERROR POR ALGUNA RAZON -->
+        <link rel="stylesheet" href="@{'/public/stylesheets/inforeports.css'}">
+        #{get 'moreStyles' /}
+        <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    </head>
+    <body>
+        
+        <div id="center">
+            <h1>Documento de restricción de uso de datos dados</h1>
+            <br>
+            <h3 class="darkgray justified">Como organización queremos cumplir con la ley de protección de datos y la privacidad de los
+                individuos registrados en nuestras bases de datos, es por eso que estamos llevando a cabo un protocolo de
+                prevención de accidentes. Este protocolo corresponde a las siguientes acciones automáticas;</h3>
+
+
+            <br><br><br>
+            <h4 class="darkgray justified">Para tratar con datos de la base de datos, se debe entregar un justificante por escrito
+                identificando al solicitante y explicar la razón de la operación a tratar. Dicho papel deberá ser aceptado.
+            </h4>
+            <br>
+            <h4 class="darkgray justified">Un fichero automatizado tomará nota de los responsable de las operaciones realizadas en la base de datos.
+                Si el sistema detecta cambios no justificados en la base de datos, nuestra organización no se hará responsable
+                de los daños a menos de probarse que dichos cambios fueron causados por nosotros.
+            </h4>
+            <br>
+            <h4 class="darkgray justified">Cooperando con la ley de datos, se prohíbe rotundamente difundir cualquier tipo de información sobre los
+                datos de nuestra base de datos. En caso de que dicha información sea difundida, el responsable será despedido
+                y deberá hacer entrega de la misma cantidad de dinero que sus acciones hayan causado en y a nuestra organización.
+                Esta cláusula es obligatoria a la hora de firmar el contrato de emmpleabilidad con nosotros.
+            </h4>
+            <br><br><br>
+
+            <h3 class="justified">A lo explicado se le aplica cualquier tipo de dato que se tratará en el futuro, se trate actualmente o
+                haya sido alguna vez tratado en el pasado, sin importar su estado actual en nuestra base de datos (agregado, borrado, editado, etc..).</h3>
+        
+            <br><br><br>
+            <h2>Firma de la organización</h2>
+            <br><br><br>
+            <h2>Firma del empleado a contratar</h2>
+        
+        </div>
+        
+        <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
+        #{get 'moreScripts' /}
+    </body>
+</html>

@@ -1,0 +1,21 @@
+#center { text-align: center; }
+.justified { text-align: justify; }
+
+.darkgrayfancy { color: rgb(155, 155, 155); }
+.darkgray { color: rgb(60, 60, 60); }
+
+
+.fancydarkblue { color: rgb(34, 120, 195); }
+.fancydarkbluetext { color: rgb(27, 86, 141); }
+
+.fancyviolet { color: rgb(215, 145, 229); }
+.fancyviolettext { color: rgb(118, 88, 124); }
+
+.fancygreen { color: rgb(138, 218, 131); }
+.fancygreentext { color: rgb(77, 128, 72); }
+
+.fancyblue { color: rgb(107, 164, 202); }
+.fancybluetext { color: rgb(58, 88, 109); }
+
+.fancyred { color: rgb(202, 120, 114); }
+.fancyredtext { color: rgb(134, 74, 69);; }
