@@ -4,7 +4,7 @@ Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos su
 # Índice de contenidos
 1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 2. [Manual simple del usuario](#manual-simple-del-usuario)
-3. [Manual de desarrollador de Play!](#manual-de-desarrollador-de-play!-framework)
+3. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 
 
 # Manual de preparativos y uso del proyecto
@@ -63,7 +63,7 @@ Desde la página de bienvenida (localhost:9000), en la esquina superior izquierd
 
 
 
-# Manual de desarrollador de Play! framework
+# Manual del desarrollador de Play Framework
 
 Este framework está preparado para, mediante técnicas internas, consumir lo menos posible de recursos del equipo, y esto conlleva a ciertas automatizaciones que desarrolladores de este framework necesitan saber.. Aunque voy a explicar lo más importante, la documentación de esta versión de Play! es accesible desde el enlace 'https://www.playframework.com/documentation/1.4.x/home'.
 
