@@ -3,7 +3,7 @@ Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos su
 
 # Índice de contenidos
 1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
-2. [Manual básico del usuario](#manual-basico-del-usuario)
+2. [Manual simple del usuario](#manual-simple-del-usuario)
 3. [Manual de desarrollador de Play!](#manual-de-desarrollador-de-play!-framework)
 
 
@@ -45,7 +45,7 @@ Ahora, con tal de saber usar el Símbolo del Sistema, saber navegar hasta la ubi
 * Hay un aspecto que puede ser necesario preconfigurar, y esto es la creación de un usuario en base de datos debido a que se piden credenciales en la interfaz gráfica para acceder a esta base de datos, dichas credenciales están dentro (de primeras no existen datos en su interior).. Una solución rápida es comentar la anotación '@With(Secure.class)' del controlador 'Users.java' (deshabilitando el requerimiento de credenciales sobre la ventana del controlador de usuarios) y crear desde la intefaz gráfica un nuevo usuario (y descomendar la anotación para que el proyecto actúe como fue creado).
 
 
-# Manual básico del usuario
+# Manual simple del usuario
 
 ### Operaciones básicas sobre base de datos
 
