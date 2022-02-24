@@ -9,9 +9,13 @@
 # Introduccion
 --------------
 
-ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basado en el proyecto verdadero que el Instituto Tecnológico de Canarias tenía pensado para nosotros. Este proyecto, realizado por Brian García Gómez y Alvaro Carreras Motas, comprende un set de páginas web para manipular de forma gráficamente amigable y completa una base de datos con tres tablas interrelacionadas y un chat local totalmente funcional.
+ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basado en el proyecto verdadero que el Instituto Tecnológico de Canarias (También llamado ITC) tenía pensado para nosotros. El proyecto original está falto de archivo y configuración VPN esenciales para la importación de dependencias, del código total del proyecto y de la base de datos necesarias para poder trabajar, por lo que este repositorio se creó y desarrolló en la mitad de tiempo que debería haber tenido (medio mes de trabajo en espera).
 
-El proyecto es Full-Stack (frontend y backend están totalmente unidos), ya que utiliza Play! como framework principal.
+La idea detrás de este proyecto, realizado por Brian García Gómez y Alvaro Carreras Motas, comprende de un set de páginas web para manipular de forma gráficamente amigable y completa una base de datos con tres tablas interrelacionadas y un chat local totalmente funcional.
+
+La necesiad detrás de este proyecto es porque necesitamos hacer un proyecto que pueda ser valorado por el profesorado del centro IES El Rincón. La necesidad detrás del proyecto del cuál este proyecto está basado es la de proporcionar formularios de convocatorias a subvenciones las cuales están registradas en la base de datos propia del ITC.
+
+Como apartado extra, este proyecto también fue creado con la conveniencia de aprender a utilizar Play! junto al generador de código del Gobierno de Canarias (el cuál se denomina FAP), puesto que el verdadero proyecto hace uso de ambos para funcionar.
 
 
 # Requisitos de usuario
