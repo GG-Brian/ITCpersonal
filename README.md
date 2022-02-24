@@ -1,10 +1,25 @@
-# ITCpersonal
-Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos suspender profes plz sed generosos con nosotros os queremos y tamos iorando
-
 # Índice de contenidos
-1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
-2. [Manual simple del usuario](#manual-simple-del-usuario)
-3. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
+0. [Introducción](#introduccion)
+1. [Requisitos de usuario](#requisitos-de-usuario)
+2. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
+3. [Manual simple del usuario](#manual-simple-del-usuario)
+4. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
+
+
+# Introduccion
+--------------
+
+ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basado en el proyecto verdadero que el Instituto Tecnológico de Canarias tenía pensado para nosotros. Este proyecto, realizado por Brian García Gómez y Alvaro Carreras Motas, comprende un set de páginas web para manipular de forma gráficamente amigable y completa una base de datos con tres tablas interrelacionadas y un chat local totalmente funcional.
+
+El proyecto es Full-Stack (frontend y backend están totalmente unidos), ya que utiliza Play! como framework principal.
+
+
+# Requsitos de usuario
+----------------------
+
+El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza técnicas de mínimo consumo de recursos por parte del dispositivo y por parte de la base de datos que utilice (es más, Play! está preparado para manejar inmensos volúmenes de datos procurando la mayor velocidad de procesamiento posible, además de funcionar como una aplicación a través de la web.
+
+Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos.
 
 
 # Manual de preparativos y uso del proyecto
