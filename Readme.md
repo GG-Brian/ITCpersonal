@@ -1,11 +1,16 @@
+# ITCpersonal
+Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos suspender profes plz sed generosos con nosotros os queremos y tamos iorando
+
 # Índice de contenidos
-1. [Manual de preparación y uso del proyecto](Manual-de-preparación-y-uso-del-proyecto-(Windows-10,-versión-de-febrero-2022))
-2. [Manual básico del usuario](Manual-básico-del-usuario)
-3. [Manual de desarrollador de Play!](Manual-de-desarrollador-de-Play!-framework)
+1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
+2. [Manual simple del usuario](#manual-simple-del-usuario)
+3. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 
 
-# Manual de preparación y uso del proyecto (Windows 10, versión de febrero 2022)
---------------------------------------------------------------------------------
+# Manual de preparativos y uso del proyecto
+-------------------------------------------
+
+Este proyecto se ha desarrollado a mediados de Febrero de 2022, en equipos con Windows 10 Home
 
 ### El equipo con el proyecto debe contener la siguiente lista de software instalada;
 
@@ -40,7 +45,8 @@ Ahora, con tal de saber usar el Símbolo del Sistema, saber navegar hasta la ubi
 * Hay un aspecto que puede ser necesario preconfigurar, y esto es la creación de un usuario en base de datos debido a que se piden credenciales en la interfaz gráfica para acceder a esta base de datos, dichas credenciales están dentro (de primeras no existen datos en su interior).. Una solución rápida es comentar la anotación '@With(Secure.class)' del controlador 'Users.java' (deshabilitando el requerimiento de credenciales sobre la ventana del controlador de usuarios) y crear desde la intefaz gráfica un nuevo usuario (y descomendar la anotación para que el proyecto actúe como fue creado).
 
 
-# Manual básico del usuario
+# Manual simple del usuario
+---------------------------
 
 ### Operaciones básicas sobre base de datos
 
@@ -58,7 +64,8 @@ Desde la página de bienvenida (localhost:9000), en la esquina superior izquierd
 
 
 
-# Manual de desarrollador de Play! framework
+# Manual del desarrollador de Play Framework
+--------------------------------------------
 
 Este framework está preparado para, mediante técnicas internas, consumir lo menos posible de recursos del equipo, y esto conlleva a ciertas automatizaciones que desarrolladores de este framework necesitan saber.. Aunque voy a explicar lo más importante, la documentación de esta versión de Play! es accesible desde el enlace 'https://www.playframework.com/documentation/1.4.x/home'.
 
