@@ -1,9 +1,10 @@
 # Índice de contenidos
 0. [Introducción](#introduccion)
 1. [Requisitos de usuario](#requisitos-de-usuario)
-2. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
-3. [Manual simple del usuario](#manual-simple-del-usuario)
-4. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
+2. [Pila tecnológica](#pila-tecnologica)
+3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
+4. [Manual simple del usuario](#manual-simple-del-usuario)
+5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 
 
 # Introduccion
@@ -24,6 +25,11 @@ Como apartado extra, este proyecto también fue creado con la conveniencia de ap
 El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza técnicas de mínimo consumo de recursos por parte del dispositivo y por parte de la base de datos que utilice (es más, Play! está preparado para manejar inmensos volúmenes de datos procurando la mayor velocidad de procesamiento posible, además de funcionar como una aplicación a través de la web.
 
 Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos.
+
+
+# Pila tecnológica
+
+
 
 
 # Manual de preparativos y uso del proyecto
