@@ -2,12 +2,12 @@
 Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos suspender profes plz sed generosos con nosotros os queremos y tamos iorando
 
 # Índice de contenidos
-1. [Manual de preparación y uso del proyecto](manual-de-preparación-y-uso-del-proyecto-(Windows-10,-versión-de-febrero-2022))
+1. [Manual de preparación y uso del proyecto](manual-de-preparación-y-uso-del-proyecto,-versión-windows-10-home-de-febrero-2022)
 2. [Manual básico del usuario](manual-básico-del-usuario)
 3. [Manual de desarrollador de Play!](manual-de-desarrollador-de-play!-framework)
 
 
-# Manual de preparación y uso del proyecto (Windows 10, versión de febrero 2022)
+# Manual de preparación y uso del proyecto, versión Windows 10 Home de febrero 2022
 --------------------------------------------------------------------------------
 
 ### El equipo con el proyecto debe contener la siguiente lista de software instalada;
