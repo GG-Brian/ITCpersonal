@@ -2,12 +2,12 @@
 Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos suspender profes plz sed generosos con nosotros os queremos y tamos iorando
 
 # Índice de contenidos
-1. [Manual de preparación y uso del proyecto](#manual-de-preparacion-y-uso-del-proyecto)
-2. [Manual básico del usuario](#Manual-básico-del-usuario)
+1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
+2. [Manual básico del usuario](#manual-básico-del-usuario)
 3. [Manual de desarrollador de Play!](#manual-de-desarrollador-de-play!-framework)
 
 
-# Manual de preparacion y uso del proyecto
+# Manual de preparativos y uso del proyecto
 ------------------------------------------
 
 Este proyecto se ha desarrollado a mediados de Febrero de 2022, en equipos con Windows 10 Home
