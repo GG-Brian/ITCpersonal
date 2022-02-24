@@ -8,7 +8,7 @@ Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos su
 
 
 # Manual de preparativos y uso del proyecto
-------------------------------------------
+-------------------------------------------
 
 Este proyecto se ha desarrollado a mediados de Febrero de 2022, en equipos con Windows 10 Home
 
@@ -46,6 +46,7 @@ Ahora, con tal de saber usar el Símbolo del Sistema, saber navegar hasta la ubi
 
 
 # Manual simple del usuario
+---------------------------
 
 ### Operaciones básicas sobre base de datos
 
@@ -64,6 +65,7 @@ Desde la página de bienvenida (localhost:9000), en la esquina superior izquierd
 
 
 # Manual del desarrollador de Play Framework
+--------------------------------------------
 
 Este framework está preparado para, mediante técnicas internas, consumir lo menos posible de recursos del equipo, y esto conlleva a ciertas automatizaciones que desarrolladores de este framework necesitan saber.. Aunque voy a explicar lo más importante, la documentación de esta versión de Play! es accesible desde el enlace 'https://www.playframework.com/documentation/1.4.x/home'.
 
