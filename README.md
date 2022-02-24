@@ -3,7 +3,7 @@ Proyecto para tener nota ya que ITC tarda demasiado y Alvaro y yo no queremos su
 
 # Índice de contenidos
 1. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
-2. [Manual básico del usuario](#manual-básico-del-usuario)
+2. [Manual básico del usuario](#manual-basico-del-usuario)
 3. [Manual de desarrollador de Play!](#manual-de-desarrollador-de-play!-framework)
 
 
