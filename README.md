@@ -14,7 +14,7 @@ ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basa
 El proyecto es Full-Stack (frontend y backend están totalmente unidos), ya que utiliza Play! como framework principal.
 
 
-# Requsitos de usuario
+# Requisitos de usuario
 ----------------------
 
 El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza técnicas de mínimo consumo de recursos por parte del dispositivo y por parte de la base de datos que utilice (es más, Play! está preparado para manejar inmensos volúmenes de datos procurando la mayor velocidad de procesamiento posible, además de funcionar como una aplicación a través de la web.
