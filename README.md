@@ -5,6 +5,7 @@
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
+6. [Planificación y organización]()
 
 
 # Introduccion
@@ -139,3 +140,19 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 * Por ejemplo, la etiqueta HTML que viene por defecto de Play! que define la ubicación del fichero de estilos 'link rel="stylesheet" media="screen" href="@{'/public/stylesheets/(nombre fichero css)'}' da error si no elimino la parte 'media="screen"'.
 
 * Para el tema de imagen, investigué por unas 5 horas para ver como mostrar una imagen, y tras muchos intentos descubrí que la forma explicada en la web no funcionaba para mi, pero un híbrido entre la forma más encontrada y la de javascript vanilla sí. Para aquellos que tampoco saben como, esta fue mi solución; 'img src="@{'/public/images/(imagen y extensión)'}"/'.
+
+
+
+# Planificacion y organizacion
+
+Si has leído el final del apartado de introducción del proyecto, te habrás dado cuenta de que los dos miembros que forman el equipo de desarrollo de este proyecto hemos tenido medio mes para desarrollar desde cero este proyecto sin conocer el correcto funcionamiento de la pila tecnológica, cuando debería haber sido un mes completo.
+
+Nuestra organización de cara al proyecto fue que ambos nos comunicamos entre sí para enviar correos al Instituto Tecnológico de Canarias para recibir los materiales necesarios para empezar, mientras completabamos casi todas las tareas caducadas del mes anterior con prisas, dado que muchas de estas estaban fuera de plazo.
+
+En un momento dado, cuando vimos que los 2 equipos que trabajan con ITC tenían el mismo problema y crearon su propio proyecto, decidimos que no podíamos perder mñas tiempo, y creamos este repositorio con todo el espacio de trabajo (por lo cuál utilizamos archivos PDF guía que nos suministró ITC) por la mera necesidad de ir a las prácticas de empresa.
+
+A partir de aquí y casi de forma automática, decidimos aportar un sistema simple de organización debido al muy pequeño tamaño del equipo, el cuá trata de que cada uno hace una parte separada del otro y que esté en la rúbrica de evaluación del proyecto (aunque cada uno comunica al otro sus acciones y ambos actúan como líder del equipo. Probablemente elegimos esta organización para avanzar lo más rápido posible sin que nos afecte mentalmente en cuanto a estrés de trabajo urgente.
+
+* A lo anterior hay que añadir que utilizamos para ayudarnos la herramienta Git proveniente de Github y la herramienta web Trello, que en resumen se trata de (entre otros) un tablón con lista de notas personalizables en la que marcamos las tareas que hacer, en proceso y completadas.
+
+Si hay algo más que pueda añadir, es que a la hora de pedir ayuda, intentamos ayudar por encima al otro a ver fallos fácil de ver que por desgaste mental el otro no podía ver, pero la verdadera ayuda provino de una exorbitante cantidad de tiempo gastado en investigación de funcionamiento de Play! y derivados (como dependencias, módulos, etc..), aunque también contamos con la ayuda del profesorado del IES El Ricón y del alumnado dispuesto a ayudarnos.
