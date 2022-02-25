@@ -1,7 +1,7 @@
 # Índice de contenidos
 0. [Introducción](#introduccion)
 1. [Requisitos de usuario](#requisitos-de-usuario)
-2. [Pila tecnológica](#pila-tecnologica)
+2. [Pila tecnológica](#pila-tecnologica-y-comparacion-entre-pilas)
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
@@ -24,12 +24,20 @@ Como apartado extra, este proyecto también fue creado con la conveniencia de ap
 
 El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza técnicas de mínimo consumo de recursos por parte del dispositivo y por parte de la base de datos que utilice (es más, Play! está preparado para manejar inmensos volúmenes de datos procurando la mayor velocidad de procesamiento posible, además de funcionar como una aplicación a través de la web.
 
-Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos.
+Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos, ya que un dispositivo con un motor de búsqueda e internet, sin importar sus prestaciones, sería suficiente.
 
 
-# Pila tecnológica
+# Pila tecnológica y comparación entre pilas
 
+La pila tecnológica está formada únicamente con un framework; Play!
 
+Este framework es un full-stack, es decir, que se compone tanto del frontend como del backend, por lo que los dos stacks (frontend y backend) son manejados conjuntamente.
+
+A diferencia de otras pilas tecnológicas y frameworks, Play! también tiene su modo de organizarse con el famoso MVC (organización en tres carpetas; Modelo, Vista y Controlador), pero este framework directamente te fuerza a organizarte bien (debido a sus técnicas automatizadas de mínimo consumo), además de que también se puede mantener muy organizado otros aspectos de suma importancia tales como las dependencias, rutas accesibles y configuración de datos de uso.
+
+Aunque no hay que negar que ciertamente existen frameworks populares que fácilmente compiten con este framework, tales como las dos pilas tecnológicas que muchas veces se ponen en conjunto; Ionic (frontend) y Spring Hibernate (backend). Sobre esto debo decir que Play! No tiene etiquetas HTML propias como Ionic (permitiendo dar estilos de forma fácil y agradable usado en conjunto con Angular JS para administrar etiquetas HTML (aunque Angular está supuestamente abandonado desde hace 1 año aproximadamente)) ni la agilidad para el desarrollador como Spring Hibernate (Cuya importación de dependencias es usualmente automática en cuanto este framework detecta ciertas líneas de código, no como en Play! que hay que indicarlo manualmente).
+
+Podría quedarme mucho más tiempo hablando de pilas tecnológicas diferentes a Play!, pero creo que queda bastante claro que está compitiendo fieramente entre otras populares por las prestaciones que ofrecen.
 
 
 # Manual de preparativos y uso del proyecto
