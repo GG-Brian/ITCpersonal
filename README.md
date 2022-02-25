@@ -30,6 +30,7 @@ Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agil
 
 
 # Pila tecnologica y comparando entre pilas
+-------------------------------------------
 
 La pila tecnológica está formada únicamente con un framework; Play!
 
@@ -145,6 +146,7 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 
 
 # Planificacion y organizacion
+------------------------------
 
 Si has leído el final del apartado de introducción del proyecto, te habrás dado cuenta de que los dos miembros que forman el equipo de desarrollo de este proyecto hemos tenido medio mes para desarrollar desde cero este proyecto sin conocer el correcto funcionamiento de la pila tecnológica, cuando debería haber sido un mes completo.
 
@@ -160,6 +162,7 @@ Si hay algo más que pueda añadir, es que a la hora de pedir ayuda, intentamos 
 
 
 # Conclusiones opiniones y reflexiones
+--------------------------------------
 
 Nota: Aquí hablamos de Play! 1.4.5, así que ciertos aspectos podrían haber cambiado sin que nosotros lo sepamos.
 
