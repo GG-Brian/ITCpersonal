@@ -7,6 +7,7 @@
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 6. [Planificación y organización](#planificacion-y-organizacion)
 7. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
+8. [Enlaces y referencias](#enlaces-y-referencias)
 
 
 # Introduccion
@@ -51,9 +52,8 @@ Este proyecto se ha desarrollado a mediados de Febrero de 2022, en equipos con W
 ### El equipo con el proyecto debe contener la siguiente lista de software instalada;
 
 Java Development Kit 8	(Para el proyecto se usó las versiones 8_201 y 8_321 sin problemas aparentes)
-Play! Framework		(El proyecto usa la versión 1.4.5)
-FAP                 (Generador de código a instalar desde Play! framework, se usó la versión 3.8.0)
-Mariadb Server		(El proyecto usa la versión 10.7 y credenciales de usuario y contraseña 'root')
+Play! Framework		      (El proyecto usa la versión 1.4.5)
+Mariadb Server		      (El proyecto usa la versión 10.7 y credenciales de usuario y contraseña 'root')
 
 Entornos de desarrollo utilizados para el desarrollo del proyecto;
 * Eclipse IDE For Java Developers and Web Enterprises 9.2021
@@ -184,7 +184,7 @@ Desventajas
 * Peculiaridades de administración de Play!, puesto que este framework fuerza al profesional a que utilize nombres concretos, use ubicaciones exactas con nombres exactos en cada parte y métodos con nombre concreto para que el proyecto pueda arrancar.
 * Los problemas generados trabajando con Play! son frecuentes y no existe apenas documentación para hacerles frente, además de que puede ser extremadamente complicado encontrar ayuda en la web sobre ellos por alguna razón.
 * La importación de módulos raramente resulta fácil de realizar, y no parece haber un lugar simple con todos los módulos de Play! y en donde se muestre como agregarlos al proyecto.
-* Está falto de documentación. Es cierto que su documentación es relativamente buena, pero falla demasiado a la hora de ayudar a aquellos que trabajan con Play!, especialmente de aspectos más populares como puede ser la generación y edición de informes, tests de código (TDD o Test-Driven Development), encriptación de datos, conectividad con websockets, etc..
+* Está falto de documentación. Es cierto que su documentación es relativamente buena, pero falla demasiado a la hora de ayudar a aquellos que trabajan con Play!, especialmente sobre aspectos más populares como puede ser la generación y edición de informes, tests de código (TDD o Test-Driven Development), encriptación de datos, conectividad con websockets, etc..
 
 
 ### Opiniones
@@ -200,4 +200,12 @@ Además, utilizar Play! requiere mucha concentración y paciencia, no solo por l
 
 Por el momento no recomendariamos hacer uso de Play!, a menos de que los desarrolladores de Play! puedan ofrecer documentación que de verdad proporcione ayuda al programador, por ejemplo en una página dejar claro todas y cada una de las peculiaridades de Play de forma que se pueda comprender, o una página con todos los errores alguna vez encontrados en Play! y más, en donde se muestre la forma de solucionarlos.
 
-A esto se le suma hacer más fácil de comprender el proceso que conlleva el enrutamiento (esto es explicar de forma clara el funcionamiento del enrutamiento en el fichero 'routes', además de hacer algo innovador y fácil de comprender y utilizar, por ejemplo algo parecido a lo que ionic ofrece ofreciendo etiquetas HTML que proporcionen estilos de forma profesional.
+A esto se le suma hacer más fácil de comprender el proceso que conlleva el enrutamiento (esto es explicar de forma clara el funcionamiento del enrutamiento en el fichero 'routes', además de hacer algo innovador y fácil de comprender y utilizar, por ejemplo algo parecido a lo que ionic ofrece con etiquetas HTML que proporcionan estilos de forma profesional.
+
+
+# Enlaces y referencias
+-----------------------
+
+Documentación de Play! framework, versión 1.4.5. - https://www.playframework.com/documentation/1.4.x/home
+
+Desde el enlace anterior se puede acceder a las páginas que hemos consultado repetidamente, como por ejemplo el tutorial que seguimos de 'yabe' (sin utilizar su template a la hora de crear el proyecto). Realmente la ayuda en enlaces y referencias provienen de incontables páginas web en Internet, pero principalmente las investigaciones empezaban a partir de la documentación de referencia de Play! framework 1.4.5.
