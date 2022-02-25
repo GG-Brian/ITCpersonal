@@ -5,7 +5,7 @@
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
-6. [Planificación y organización]()
+6. [Planificación y organización](#planificacion-y-organizacion)
 
 
 # Introduccion
@@ -149,9 +149,9 @@ Si has leído el final del apartado de introducción del proyecto, te habrás da
 
 Nuestra organización de cara al proyecto fue que ambos nos comunicamos entre sí para enviar correos al Instituto Tecnológico de Canarias para recibir los materiales necesarios para empezar, mientras completabamos casi todas las tareas caducadas del mes anterior con prisas, dado que muchas de estas estaban fuera de plazo.
 
-En un momento dado, cuando vimos que los 2 equipos que trabajan con ITC tenían el mismo problema y crearon su propio proyecto, decidimos que no podíamos perder mñas tiempo, y creamos este repositorio con todo el espacio de trabajo (por lo cuál utilizamos archivos PDF guía que nos suministró ITC) por la mera necesidad de ir a las prácticas de empresa.
+En un momento dado, cuando vimos que los dos equipos que trabajan con ITC tenían el mismo problema y crearon su propio proyecto, decidimos que no podíamos perder más tiempo, y creamos este repositorio con todo el espacio de trabajo (por lo cuál utilizamos archivos PDF guía que nos suministró ITC) por la mera necesidad de ir a las prácticas de empresa.
 
-A partir de aquí y casi de forma automática, decidimos aportar un sistema simple de organización debido al muy pequeño tamaño del equipo, el cuá trata de que cada uno hace una parte separada del otro y que esté en la rúbrica de evaluación del proyecto (aunque cada uno comunica al otro sus acciones y ambos actúan como líder del equipo. Probablemente elegimos esta organización para avanzar lo más rápido posible sin que nos afecte mentalmente en cuanto a estrés de trabajo urgente.
+A partir de aquí y casi de forma automática, decidimos aportar un sistema simple de organización debido al muy pequeño tamaño del equipo, el cuál trata de que cada uno hace una parte separada del otro y que esté en la rúbrica de evaluación del proyecto (aunque cada uno comunica al otro sus acciones y ambos actúan como líder del equipo. Probablemente elegimos esta organización para avanzar lo más rápido posible sin que nos afecte mentalmente en cuanto a estrés de trabajo urgente.
 
 * A lo anterior hay que añadir que utilizamos para ayudarnos la herramienta Git proveniente de Github y la herramienta web Trello, que en resumen se trata de (entre otros) un tablón con lista de notas personalizables en la que marcamos las tareas que hacer, en proceso y completadas.
 
