@@ -156,3 +156,44 @@ A partir de aquí y casi de forma automática, decidimos aportar un sistema simp
 * A lo anterior hay que añadir que utilizamos para ayudarnos la herramienta Git proveniente de Github y la herramienta web Trello, que en resumen se trata de (entre otros) un tablón con lista de notas personalizables en la que marcamos las tareas que hacer, en proceso y completadas.
 
 Si hay algo más que pueda añadir, es que a la hora de pedir ayuda, intentamos ayudar por encima al otro a ver fallos fácil de ver que por desgaste mental el otro no podía ver, pero la verdadera ayuda provino de una exorbitante cantidad de tiempo gastado en investigación de funcionamiento de Play! y derivados (como dependencias, módulos, etc..), aunque también contamos con la ayuda del profesorado del IES El Ricón y del alumnado dispuesto a ayudarnos.
+
+
+# Conclusiones, opiniones y reflexiones
+
+Nota: Aquí hablamos de Play! 1.4.5, así que ciertos aspectos podrían haber cambiado sin que nosotros lo sepamos.
+
+### Conclusión
+
+Ventajas
+
+* La administración de Play! es relativamente fácil cuando se trabaja por un largo periodo con él.
+* La organización está extremadamente bien hecha.
+* Consume recursos mínimos (Según los desarrolladores de Play!)
+* Proporciona comandos de consola de fácil manejo a través del Símbolo del Sistema u otros tipos de terminales.
+* Play! proporciona una documentación a sus desarrolladores.
+* Existe una extensa variedad de módulos disponibles.
+* Los errores de compilación resultan ser frecuentemente fáciles de identificar gracias a Play! cuando es iniciado como proyecto.
+* Soporte a través de comandos de consola para trabajar con diferentes tipos de entorno de desarrollo con peculiaridades, tales como Eclipse o Netbeans.
+
+Desventajas
+
+* Peculiaridades de administración de Play!, puesto que este framework fuerza al profesional a que utilize nombres concretos, use ubicaciones exactas con nombres exactos en cada parte y métodos con nombre concreto para que el proyecto pueda arrancar.
+* Los problemas generados trabajando con Play! son frecuentes y no existe apenas documentación para hacerles frente, además de que puede ser extremadamente complicado encontrar ayuda en la web sobre ellos por alguna razón.
+* La importación de módulos raramente resulta fácil de realizar, y no parece haber un lugar simple con todos los módulos de Play! y en donde se muestre como agregarlos al proyecto.
+* Está falto de documentación. Es cierto que su documentación es relativamente buena, pero falla demasiado a la hora de ayudar a aquellos que trabajan con Play!, especialmente de aspectos más populares como puede ser la generación y edición de informes, tests de código (TDD o Test-Driven Development), encriptación de datos, conectividad con websockets, etc..
+
+
+### Opiniones
+
+Trabajar con Play! nos ha causado demasiados problemas, la falta de documentación es tal que nos obligaba a detenernos por ratos demasiado prolongados y a pedir ayuda a la web, profesorado del IES El Rincón o alumnado, los cuales casi siempre ofrecieron la ayuda necesaria en comparación con Play!.
+
+Puede ser que Play! tenga mejor documentación que otros frameworks, pero en comparación con estos, buscar ayuda en la web es frecuentemente mucho más fácil, ejemplo de esto es la pila tecnológica de Ionic (frontend) y Spring Hibernate (backend).
+
+Además, utilizar Play! requiere mucha concentración y paciencia, no solo por la falta de documentación, sino también por la forma en la que Play! se administra para ser funcional.
+
+
+### Reflexiones
+
+Por el momento no recomendariamos hacer uso de Play!, a menos de que los desarrolladores de Play! puedan ofrecer documentación que de verdad proporcione ayuda al programador, por ejemplo en una página dejar claro todas y cada una de las peculiaridades de Play de forma que se pueda comprender, o una página con todos los errores alguna vez encontrados en Play! y más, en donde se muestre la forma de solucionarlos.
+
+A esto se le suma hacer más fácil de comprender el proceso que conlleva el enrutamiento (esto es explicar de forma clara el funcionamiento del enrutamiento en el fichero 'routes', además de hacer algo innovador y fácil de comprender y utilizar, por ejemplo algo parecido a lo que ionic ofrece ofreciendo etiquetas HTML que proporcionen estilos de forma profesional.
