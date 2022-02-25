@@ -1,7 +1,7 @@
 # Índice de contenidos
 0. [Introducción](#introduccion)
 1. [Requisitos de usuario](#requisitos-de-usuario)
-2. [Pila tecnológica](#pila-tecnologica-y-comparacion-entre-pilas)
+2. [Pila tecnológica](#pila-tecnologica-y-comparando-entre-pilas)
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
@@ -27,7 +27,7 @@ El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza 
 Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos, ya que un dispositivo con un motor de búsqueda e internet, sin importar sus prestaciones, sería suficiente.
 
 
-# Pila tecnológica y comparación entre pilas
+# Pila tecnológica y comparando entre pilas
 
 La pila tecnológica está formada únicamente con un framework; Play!
 
