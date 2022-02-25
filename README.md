@@ -6,6 +6,7 @@
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 6. [Planificación y organización](#planificacion-y-organizacion)
+7. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
 
 
 # Introduccion
@@ -158,7 +159,7 @@ A partir de aquí y casi de forma automática, decidimos aportar un sistema simp
 Si hay algo más que pueda añadir, es que a la hora de pedir ayuda, intentamos ayudar por encima al otro a ver fallos fácil de ver que por desgaste mental el otro no podía ver, pero la verdadera ayuda provino de una exorbitante cantidad de tiempo gastado en investigación de funcionamiento de Play! y derivados (como dependencias, módulos, etc..), aunque también contamos con la ayuda del profesorado del IES El Ricón y del alumnado dispuesto a ayudarnos.
 
 
-# Conclusiones, opiniones y reflexiones
+# Conclusiones opiniones y reflexiones
 
 Nota: Aquí hablamos de Play! 1.4.5, así que ciertos aspectos podrían haber cambiado sin que nosotros lo sepamos.
 
