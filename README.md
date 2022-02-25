@@ -27,7 +27,7 @@ El proyecto se creó utilizando el framework denominado Play!, el cuál utiliza 
 Gracias a esto, el proyecto resulta en un muy buen balance entre ligereza y agilidad, y se presenta como una aplicación multiplataforma.. Por lo que los requisitos de usuarios son prácticamente nulos, ya que un dispositivo con un motor de búsqueda e internet, sin importar sus prestaciones, sería suficiente.
 
 
-# Pila tecnológica y comparando entre pilas
+# Pila tecnologica y comparando entre pilas
 
 La pila tecnológica está formada únicamente con un framework; Play!
 
