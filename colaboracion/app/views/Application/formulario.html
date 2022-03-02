@@ -1,0 +1,110 @@
+#{extends 'main.html' /}
+#{set title:'Subvencion' /}
+<style>
+    .nav-link{
+        color: black;
+        width: 100%;
+    }
+
+    .nav-link:hover, .nav-link.active{
+        background-color: #c8c8c8 !important;
+        color: black !important;
+    }
+
+    .row{
+        height: 100%;
+    }
+
+    .col-sm-10{
+        background-color: #f3f3f3;
+        height: 100%;
+    }
+
+    .flex-row{
+        height: 100%;
+    }
+
+    .align-items-start{
+        background-color: #dadada;
+        height: 100%;
+    }
+
+    .espacio{
+        margin-left: 10px;
+    }
+
+    .centered{
+        text-align: center;
+    }
+
+</style>
+
+<div class="row">
+
+    <div class="col-sm-10" id="1">
+
+        <div class="d-flex flex-row nav-border">
+
+            <div class="d-flex align-items-start">
+
+                <div class="nav flex-column nav-pills me-3 nav-shadow pb-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                    <li class="nav-link active" id="v-pills-informacion-tab" data-bs-toggle="pill" data-bs-target="#v-pills-informacion" type="button" role="tab" aria-controls="v-pills-informacion" aria-selected="true">Información</li>
+
+                    <li class="nav-link" id="v-pills-datosPersonales-tab" data-bs-toggle="pill" data-bs-target="#v-pills-datosPersonales" type="button" role="tab" aria-controls="v-pills-datosPersonales" aria-selected="false">Datos Personales</li>
+
+                    <li class="nav-link" id="v-pills-requisitos-tab" data-bs-toggle="pill" data-bs-target="#v-pills-requisitos" type="button" role="tab" aria-controls="v-pills-requisitos" aria-selected="false">Requisitos</li>
+
+                    <li class="nav-link" id="v-pills-firma-tab" data-bs-toggle="pill" data-bs-target="#v-pills-firma" type="button" role="tab" aria-controls="v-pills-firma" aria-selected="false">Firmar</li>
+
+                </div>
+
+            </div>
+
+            <div class="tab-content" id="v-pills-tabContent">
+
+                <div class="tab-pane fade show active pt-4 me-4" id="v-pills-informacion" role="tabpanel" aria-labelledby="v-pills-informacion-tab">
+                    <div class="espacio">
+                        <h1>Informacion sobre la convocatoria.</h1>
+
+                        <h4>uysgdfhisadfnidsjfiosdjfisd iuefhisudfhn iudsfh iuspf suhf</h4>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade pt-4 me-4" id="v-pills-datosPersonales" role="tabpanel" aria-labelledby="v-pills-datosPersonales-tab">
+                    #{formularioDatosPersonales /}
+                </div>
+
+                <div class="tab-pane fade pt-4 me-4" id="v-pills-requisitos" role="tabpanel" aria-labelledby="v-pills-requisitos-tab">
+                    #{formularioInformacion /}
+                </div>
+
+                <div class="tab-pane fade pt-4 me-4 espacio" id="v-pills-firma" role="tabpanel" aria-labelledby="v-pills-firma-tab">
+                    <h1>Finalizar proceso</h1>
+                    <h4>Firmar para tramitar la subvención</h4><br>
+
+                    <div class="centered">
+                        <button onclick="">Firmar</button>
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+		 
+    </div>
+
+<!--************************************************** Flex 2 ****************************************************-->
+
+    <div class="col-sm-2">
+    	<h5>¿Necesita ayuda?</h5>
+        <p>Inicie un chat en directo para resolver todas sus dudas.</p>
+
+          
+        <script>
+        </script>
+
+    </div>
+    
+</div>

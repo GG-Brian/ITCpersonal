@@ -15,10 +15,42 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.playframework.playclipse.playNature</nature>
 	</natures>
-	<linkedResources><link><name>crud</name><type>2</type><location>D:/DAM/play-1.4.5/modules/crud/app</location></link>
-<link><name>conf/crud</name><type>2</type><location>D:/DAM/play-1.4.5/modules/crud/conf</location></link>
-<link><name>public/crud</name><type>2</type><location>D:/DAM/play-1.4.5/modules/crud/public</location></link>
-<link><name>docviewer</name><type>2</type><location>D:/DAM/play-1.4.5/modules/docviewer/app</location></link>
-<link><name>public/docviewer</name><type>2</type><location>D:/DAM/play-1.4.5/modules/docviewer/public</location></link>
-</linkedResources>
+	<linkedResources>
+		<link>
+			<name>crud</name>
+			<type>2</type>
+			<location>D:/DAM/play-1.4.5/modules/crud/app</location>
+		</link>
+		<link>
+			<name>docviewer</name>
+			<type>2</type>
+			<location>D:/DAM/play-1.4.5/modules/docviewer/app</location>
+		</link>
+		<link>
+			<name>conf/crud</name>
+			<type>2</type>
+			<location>D:/DAM/play-1.4.5/modules/crud/conf</location>
+		</link>
+		<link>
+			<name>public/crud</name>
+			<type>2</type>
+			<location>D:/DAM/play-1.4.5/modules/crud/public</location>
+		</link>
+		<link>
+			<name>public/docviewer</name>
+			<type>2</type>
+			<location>D:/DAM/play-1.4.5/modules/docviewer/public</location>
+		</link>
+	</linkedResources>
+	<filteredResources>
+		<filter>
+			<id>1645460024252</id>
+			<name></name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>node_modules|.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+			</matcher>
+		</filter>
+	</filteredResources>
 </projectDescription>

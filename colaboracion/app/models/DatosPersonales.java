@@ -9,7 +9,7 @@ import play.db.jpa.Model;
 @Entity
 public class DatosPersonales extends Model{
 	
-	String nokbre;
+	String nombre;
 	String apellido1;
 	String apellido2;
 	String dni;
