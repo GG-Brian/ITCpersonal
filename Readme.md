@@ -185,7 +185,30 @@ La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una
 * * idUser - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
 * * idInfo - Campo de clave ajena a la clave primaria de Informacion (id, usada como identificación de conocatoria único)
 
-RELLENAR MÁS
+
+### Modelos
+
+En el esquema relacional inferior se puede apreciar como se interrelacionan las tablas de la base de datos y los tipos de datos que se guardan en su interior (versión desactualizada por el cambio de dato de String a boolean en ciertos campos de Informacion)
+
+![image](https://user-images.githubusercontent.com/71889035/156456833-140a6aa7-31b3-4eef-9ba4-d676278fa260.png)
+
+
+### Diagrama de datos Entidad-Relación
+
+En el diagrama inferior se puede apreciar las relaciones entre tablas a modo de entidades y de aquellas entidades-relaciones, junto a sus respectivas columnas, indicando de forma breve que cada serie de datos personales es asociada a uno y solo a un usuario, y un usuario rellena uno, y solo un formulario de convocatoria.
+
+![image](https://user-images.githubusercontent.com/71889035/156457450-4c7b9170-226e-4fdd-9cad-445efcb4e423.png)
+
+
+### Casos de uso
+
+En lo que respecta a usuarios con acceso a la base de datos, solo existen dos tipos de usuarios; Usuario regular y Admin.
+
+Cada uno tiene acciones que se le permite, y uno tiene mayor poder administrativo que el otro, todo para preveér el mejor mantenimiento y cuidado posible sobre la base de datos en general.
+
+Existe un tercer usuario no considerado en la siguiente imagen explicativa de casos de uso, puesto que un usuario no registrado no debería poder realizar acciones en una página de convocatorias a menos de haberse identificado (y así guardar sus datos, y que sola y exclusivamente acceda a sus propios datos).
+
+![image](https://user-images.githubusercontent.com/71889035/156458008-56dca81c-3033-4ecd-8a94-c54aa83571f3.png)
 
 
 
