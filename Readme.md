@@ -174,6 +174,19 @@ La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una
 * * apellido1 - Campo de texto cuyo contenido hace ilusión al segundo sustantivo propio identificativo de un ser humano.
 * * apellido2 - Campo de texto cuyo contenido hace ilusión al tercer sustantivo propio identificativo de un ser humano.
 * * dni       - Campo de ocho números y una letra que identifican a un ser humano como persona física de un territorio.
+* * correo    - Campo de texto con dirección de correo electrónico perteneciente al usuario al que se le asocian estos datos.
+* * tlf       - Campo numérico que hace referencia a un número de teléfono por el que se puede contactac al usuario asociado.
+
+* Tiene (Tabla de asociación entre registros de tabla User y Datos_personales):
+* * idUser  - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+* * idDatos - Campo de clave ajena a la clave primaria de Datos_Personales (id, usada como identificación de serie de datos único)
+
+* Rellena (Tabla de asociación entre registros de tabla User e Informacion):
+* * idUser - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+* * idInfo - Campo de clave ajena a la clave primaria de Informacion (id, usada como identificación de conocatoria único)
+
+RELLENAR MÁS
+
 
 
 # Planificacion y organizacion
