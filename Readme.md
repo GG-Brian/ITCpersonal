@@ -154,36 +154,36 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una con sus respectivas columnas;
 
 * User - Discrimina usuarios por permiso a secciones de web cuyos datos a manipular son más concretos, únicos y sensibles:
-* * id     - Identificación única de usuario.
-* * nombre - Nombre completo del usuario.
-* * firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
-* * rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
+id     - Identificación única de usuario.
+nombre - Nombre completo del usuario.
+firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
+rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
 
 * Informacion (Datos de convocatoria (usuarios afiliados a esta información se tratan en la tabla 'Rellena')):
-* * id                 - Identificador único de datos de convocatoria.
-* * familiaNumerosa    - Campo booleano (true/false) para indicar si la familia del usuario afiliado es numerosa.
-* * familiaNumerosaPdf - Campo para archivos PDF que acrediten el estado de familia numerosa.
-* * discapacidad       - Valor true/false para indicar si el usuario afiliado presenta dificultades mentales y/o motrices.
-* * discapacidadPdf    - Campo para archivos PDF que acrediten las dificultades mentales y/o motrices del usuario afiliado.
-* * rentaPdf           - Campo para archivos PDF que informen sobre la renta económica del usuario afiliado.
-* * Estudios           - Campo de texto indicativo del nivel de estudios que el usuario afiliado va a cursar.
+id                 - Identificador único de datos de convocatoria.
+familiaNumerosa    - Campo booleano (true/false) para indicar si la familia del usuario afiliado es numerosa.
+familiaNumerosaPdf - Campo para archivos PDF que acrediten el estado de familia numerosa.
+discapacidad       - Valor true/false para indicar si el usuario afiliado presenta dificultades mentales y/o motrices.
+discapacidadPdf    - Campo para archivos PDF que acrediten las dificultades mentales y/o motrices del usuario afiliado.
+rentaPdf           - Campo para archivos PDF que informen sobre la renta económica del usuario afiliado.
+Estudios           - Campo de texto indicativo del nivel de estudios que el usuario afiliado va a cursar.
 
 * Datos_personales (Información sensible identificativo de persona física (usuarios asociados son tratados en la tabla 'Tiene')):
-* * id        - Identificador único de los datos.
-* * nombre    - Campo de texto cuyo contenido hace ilusión al primer sustantivo propio identificativo de un ser humano.
-* * apellido1 - Campo de texto cuyo contenido hace ilusión al segundo sustantivo propio identificativo de un ser humano.
-* * apellido2 - Campo de texto cuyo contenido hace ilusión al tercer sustantivo propio identificativo de un ser humano.
-* * dni       - Campo de ocho números y una letra que identifican a un ser humano como persona física de un territorio.
-* * correo    - Campo de texto con dirección de correo electrónico perteneciente al usuario al que se le asocian estos datos.
-* * tlf       - Campo numérico que hace referencia a un número de teléfono por el que se puede contactac al usuario asociado.
+id        - Identificador único de los datos.
+nombre    - Campo de texto cuyo contenido hace ilusión al primer sustantivo propio identificativo de un ser humano.
+apellido1 - Campo de texto cuyo contenido hace ilusión al segundo sustantivo propio identificativo de un ser humano.
+apellido2 - Campo de texto cuyo contenido hace ilusión al tercer sustantivo propio identificativo de un ser humano.
+dni       - Campo de ocho números y una letra que identifican a un ser humano como persona física de un territorio.
+correo    - Campo de texto con dirección de correo electrónico perteneciente al usuario al que se le asocian estos datos.
+tlf       - Campo numérico que hace referencia a un número de teléfono por el que se puede contactac al usuario asociado.
 
 * Tiene (Tabla de asociación entre registros de tabla User y Datos_personales):
-* * idUser  - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
-* * idDatos - Campo de clave ajena a la clave primaria de Datos_Personales (id, usada como identificación de serie de datos único)
+idUser  - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+idDatos - Campo de clave ajena a la clave primaria de Datos_Personales (id, usada como identificación de serie de datos único)
 
 * Rellena (Tabla de asociación entre registros de tabla User e Informacion):
-* * idUser - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
-* * idInfo - Campo de clave ajena a la clave primaria de Informacion (id, usada como identificación de conocatoria único)
+idUser - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+idInfo - Campo de clave ajena a la clave primaria de Informacion (id, usada como identificación de conocatoria único)
 
 
 ### Modelos
