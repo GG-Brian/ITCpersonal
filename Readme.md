@@ -5,9 +5,10 @@
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
-6. [Planificación y organización](#planificacion-y-organizacion)
-7. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
-8. [Enlaces y referencias](#enlaces-y-referencias)
+6. [Base de datos; Descripción, modelos, diagramas y casos de uso](#base-de-datos-caracteristicas-relevantes)
+7. [Planificación y organización](#planificacion-y-organizacion)
+8. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
+9. [Enlaces y referencias](#enlaces-y-referencias)
 
 
 # Introduccion
@@ -17,9 +18,9 @@ ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basa
 
 La idea detrás de este proyecto, realizado por Brian García Gómez y Alvaro Carreras Motas, comprende de un set de páginas web para manipular de forma gráficamente amigable y completa una base de datos con tres tablas interrelacionadas y un chat local totalmente funcional.
 
-La necesiad detrás de este proyecto es porque necesitamos hacer un proyecto que pueda ser valorado por el profesorado del centro IES El Rincón. La necesidad detrás del proyecto del cuál este proyecto está basado es la de proporcionar formularios de convocatorias a subvenciones las cuales están registradas en la base de datos propia del ITC.
+La necesidad detrás de este proyecto es la de desarrollar un proyecto que pueda ser valorado por el profesorado del centro IES El Rincón. La necesidad detrás del proyecto del cuál este proyecto está basado es la de proporcionar formularios de convocatorias a subvenciones las cuales están registradas en la base de datos propia del ITC.
 
-Como apartado extra, este proyecto también fue creado con la conveniencia de aprender a utilizar Play! junto al generador de código del Gobierno de Canarias (el cuál se denomina FAP), puesto que el verdadero proyecto hace uso de ambos para funcionar.
+Como apartado extra, este proyecto también fue creado con la conveniencia de aprender a utilizar Play! junto al generador de código del Gobierno de Canarias (cuyas siglas son F.A.P.), puesto que el verdadero proyecto utiliza ambas tecnologías para funcionar.
 
 
 # Requisitos de usuario
@@ -143,6 +144,36 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 
 * Para el tema de imagen, investigué por unas 5 horas para ver como mostrar una imagen, y tras muchos intentos descubrí que la forma explicada en la web no funcionaba para mi, pero un híbrido entre la forma más encontrada y la de javascript vanilla sí. Para aquellos que tampoco saben como, esta fue mi solución; 'img src="@{'/public/images/(imagen y extensión)'}"/'.
 
+
+
+# Base de datos caracteristicas relevantes
+------------------------------------------
+
+### Descripción
+
+La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una con sus respectivas columnas;
+
+* User - Discrimina usuarios por permiso a secciones de web cuyos datos a manipular son más concretos, únicos y sensibles:
+* * id     - Identificación única de usuario.
+* * nombre - Nombre completo del usuario.
+* * firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
+* * rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
+
+* Informacion (Datos de convocatoria (usuarios afiliados a esta información se tratan en la tabla 'Rellena')):
+* * id                 - Identificador único de datos de convocatoria.
+* * familiaNumerosa    - Campo booleano (true/false) para indicar si la familia del usuario afiliado es numerosa.
+* * familiaNumerosaPdf - Campo para archivos PDF que acrediten el estado de familia numerosa.
+* * discapacidad       - Valor true/false para indicar si el usuario afiliado presenta dificultades mentales y/o motrices.
+* * discapacidadPdf    - Campo para archivos PDF que acrediten las dificultades mentales y/o motrices del usuario afiliado.
+* * rentaPdf           - Campo para archivos PDF que informen sobre la renta económica del usuario afiliado.
+* * Estudios           - Campo de texto indicativo del nivel de estudios que el usuario afiliado va a cursar.
+
+* Datos_personales (Información sensible identificativo de persona física (usuarios asociados son tratados en la tabla 'Tiene')):
+* * id        - Identificador único de los datos.
+* * nombre    - Campo de texto cuyo contenido hace ilusión al primer sustantivo propio identificativo de un ser humano.
+* * apellido1 - Campo de texto cuyo contenido hace ilusión al segundo sustantivo propio identificativo de un ser humano.
+* * apellido2 - Campo de texto cuyo contenido hace ilusión al tercer sustantivo propio identificativo de un ser humano.
+* * dni       - Campo de ocho números y una letra que identifican a un ser humano como persona física de un territorio.
 
 
 # Planificacion y organizacion
