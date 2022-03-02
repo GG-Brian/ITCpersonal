@@ -4,8 +4,10 @@
 
 # Home page
 GET     /                                       Application.index
-# Chat
+GET     /subvencion                             Application.formulario
+# Paginas
 GET		/chat									staticFile:/app/views/Application/chat.html
+#GET		/subvencion								staticFile:/app/views/Application/formulario.html
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

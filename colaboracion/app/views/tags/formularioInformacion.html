@@ -1,0 +1,52 @@
+<style>
+    form{
+        margin-left: 10px;
+    }
+</style>
+
+<h1>Documentación y Requisitos</h1>
+
+<form>
+
+    <div class="form-check form-switch">
+        <label class="form-check-label" for="discapacidad">Padece de alguna discapacidad o convive con alguien que la padezca?</label>
+        <input class="form-check-input" type="checkbox" id="discapacidad" name="discapacidad" value="no" onchange="pdfDisc();">
+    </div>
+
+    <div class="mb-3 mt-3">
+        <label for="discapacidadPdf" class="form-label" id="labelDisc" style="display: none;">Documento acreditativo de discapacidad:</label>
+        <input type="file" class="form-control" id="discapacidadPdf" placeholder="discapacidadPdf" name="discapacidadPdf" style="display: none;">
+    </div>
+
+    <div class="form-check form-switch">
+        <label class="form-check-label" for="familia">Familia numerosa</label>
+        <input class="form-check-input" type="checkbox" id="familia" name="familia" value="no">
+    </div>
+
+    <div class="mb-3 mt-3">
+        <label for="familiaPdf" class="form-label">Documento acreditativo de familia numerosa:</label>
+        <input type="file" class="form-control" id="familiaPdf" placeholder="familiaPdf" name="familiaPdf">
+    </div>
+
+    <div class="mb-3 mt-3">
+        <label for="renta" class="form-label">Renta:</label>
+        <input type="file" class="form-control" id="renta" placeholder="renta" name="renta">
+    </div>
+
+    <button onclick="">Confirmar datos</button>
+
+</form>
+
+<script>
+
+    function pdfDisc(){
+        if(document.getElementById("discapacidadPdf").value == "yes"){
+            document.getElementById("labelDisc").style="display: block;"
+            document.getElementById("discapacidadPdf").style="display: block;"
+        }else{
+            document.getElementById("labelDisc").style="display: none;"
+            document.getElementById("discapacidadPdf").style="display: none;"
+        }
+    }
+    
+</script>

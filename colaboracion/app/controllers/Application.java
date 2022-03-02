@@ -15,6 +15,7 @@ public class Application extends Controller {
 
     public static void index() throws Exception {
         render();
+<<<<<<< HEAD
 	}
 
     public static void report() throws Exception {renderPDF(); }
@@ -68,5 +69,13 @@ public class Application extends Controller {
 	// private static User getUser() {
 	// 	return User.findOrCreate("guest");
 	// }
+=======
+    }
+    
+    
+    public static void formulario() {
+        render();
+    }
+>>>>>>> feature-alvaro
 
 }

@@ -1,12 +1,14 @@
 package controllers;
 
+import java.util.ArrayList;
+
 import play.Logger;
+import play.mvc.Http.Inbound;
+import play.mvc.Http.Outbound;
 import play.mvc.Http.WebSocketClose;
 import play.mvc.Http.WebSocketEvent;
 import play.mvc.Http.WebSocketFrame;
 import play.mvc.WebSocketController;
-import play.libs.WS;
-import play.libs.F;
 
 public class MyWebSocket extends WebSocketController{
 	
@@ -14,31 +16,15 @@ public class MyWebSocket extends WebSocketController{
         outbound.send("Hello %s!", name);
     }
 	
-//	public static void chat(String message) {
-//        outbound.send("-", message);
-//    }
-	
-	/*public static void echo2() {
-	    while(inbound.isOpen()) {
-	       WebSocketEvent e = await(inbound.nextEvent());
-	         
-	       for(String quit: TextFrame.and(
-	    		   Equals("quit")).match(e)) {
-	           outbound.send("Bye!");
-	           disconnect();
-	       }
-	 
-	       for(String message: TextFrame.match(e)) {
-	           outbound.send("Echo: %s", message);
-	       }
-	         
-	       for(WebSocketClose closed: SocketClosed.match(e)) {
-	           Logger.info("Socket closed!");
-	       }
-	    }
-	}*/
+	static ArrayList<Inbound> inbounds = new ArrayList<Inbound>();
+	static ArrayList<Outbound> outbounds = new ArrayList<Outbound>();
 	
 	public static void echo(){
+		outbound.send("Chat abierto.");
+		
+		inbounds.add(inbound);
+		outbounds.add(outbound);
+		
         while(inbound.isOpen()){
         	WebSocketEvent e = await(inbound.nextEvent());
              
@@ -47,15 +33,18 @@ public class MyWebSocket extends WebSocketController{
                   
                 if(e != null) {//!e.isBinary
                 	if(frame.textData.equals("quit")){
-                    	outbound.send("Bye!");
+                    	outbound.send("Chat cerrado.");
                         disconnect();
                           
                     }else{
-                        outbound.send("Echo: %s", frame.textData); 
+                    	for(int i = 0; i < inbounds.size(); i++) {
+                    		outbounds.get(i).send("Tu: %s", frame.textData); 
+                    	}
+                    	 
                     }
                 }
-           }
-           if(e instanceof WebSocketClose){
+            }
+            if(e instanceof WebSocketClose){
                Logger.info("Socket closed!");
            }
         }
