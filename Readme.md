@@ -154,10 +154,10 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una con sus respectivas columnas;
 
 * User - Discrimina usuarios por permiso a secciones de web cuyos datos a manipular son más concretos, únicos y sensibles:
--- id     - Identificación única de usuario.
--- nombre - Nombre completo del usuario.
--- firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
--- rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
+** id     - Identificación única de usuario.
+** nombre - Nombre completo del usuario.
+** firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
+** rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
 
 * Informacion (Datos de convocatoria (usuarios afiliados a esta información se tratan en la tabla 'Rellena')):
 -- id                 - Identificador único de datos de convocatoria.
