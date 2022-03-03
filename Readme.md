@@ -6,9 +6,10 @@
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
 6. [Base de datos; Descripción, modelos, diagramas y casos de uso](#base-de-datos-caracteristicas-relevantes)
-7. [Planificación y organización](#planificacion-y-organizacion)
-8. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
-9. [Enlaces y referencias](#enlaces-y-referencias)
+7. [Usabilidad; Prototipo y diseño gráfico](#proyecto-prototipo-y-aspectos-de-usabilidad)
+8. [Planificación y organización](#planificacion-y-organizacion)
+9. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
+10. [Enlaces y referencias](#enlaces-y-referencias)
 
 
 # Introduccion
@@ -209,6 +210,13 @@ Cada uno tiene acciones que se le permite, y uno tiene mayor poder administrativ
 Existe un tercer usuario no considerado en la siguiente imagen explicativa de casos de uso, puesto que un usuario no registrado no debería poder realizar acciones en una página de convocatorias a menos de haberse identificado (y así guardar sus datos, y que sola y exclusivamente acceda a sus propios datos).
 
 ![image](https://user-images.githubusercontent.com/71889035/156458008-56dca81c-3033-4ecd-8a94-c54aa83571f3.png)
+
+
+
+# Proyecto prototipo y aspectos de usabilidad
+
+
+
 
 
 
