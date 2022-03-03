@@ -214,8 +214,42 @@ Existe un tercer usuario no considerado en la siguiente imagen explicativa de ca
 
 
 # Proyecto prototipo y aspectos de usabilidad
+---------------------------------------------
+
+En la raiz de este repositorio se encuentra el archivo 'Prototipo itcpersonal', creado a partir de la herramienta de creación de interfaz gráfica denominada Justinmind.
+
+Dicho archivo contiene 10 páginas gráficas, las cuales conforman el set de páginas web del proyecto propio.
 
 
+### Prototipo; Principal
+
+El set de páginas web comienza a partir de la siguiente página web, dando la información principal de sobre datos sensibles y convocatorias relacionadas con del Gobierno de Canarias y su sede de servicios;
+
+![Principal@1x](https://user-images.githubusercontent.com/71889035/156664182-18ca9523-6f4b-40d0-829b-be0b753a08ae.png)
+
+
+### Prototipo; convocatorias de subvencion
+
+Las siguientes páginas web pertenecen a un subset, las cuales se encargan de manejar las convocatorias (en el caso de que el usuario quiera realizar dichas convocatorias por aquí en vez de a través de la sede de servicios del Gobierno de Canarias) y los datos personales del usuario;
+
+![subvencion-info@1x](https://user-images.githubusercontent.com/71889035/156665123-1c2beb81-7933-40bb-ac70-34e10438e207.png)
+![subvencion-datos@1x](https://user-images.githubusercontent.com/71889035/156665147-2ff0574f-f59d-4b6e-acbe-bdf9535e6bec.png)
+![subvencion-requisitos@1x](https://user-images.githubusercontent.com/71889035/156665155-b2159294-84fa-4de0-9419-98cb66aed7a9.png)
+![subvencion-firma@1x](https://user-images.githubusercontent.com/71889035/156665159-ab44a03d-d0b5-4597-849c-fd30c97b0768.png)
+
+
+### Prototipo; Gestión administrativa de la base de datos y datos sensibles
+
+Las siguientes páginas web pertenecen a un subset, las cuales se encargan de manejar datos de la base de datos subvencion, una de ellas requeriendo acceso a través de credenciales que deben haber sido registradas previamente (más información en el manual del desarrollador);
+
+![admin-general@1x](https://user-images.githubusercontent.com/71889035/156666242-76e0adb2-9690-430a-a77f-3fa33d5aa8b0.png)
+![admin-reading@1x](https://user-images.githubusercontent.com/71889035/156666229-c8fc9d50-f4d9-40df-be9a-73f9a82332c2.png)
+![admin-addition@1x](https://user-images.githubusercontent.com/71889035/156666253-368fb8ea-efa6-470f-80ba-d8a834f0613e.png)
+![admin-edition-deletion@1x](https://user-images.githubusercontent.com/71889035/156666257-23f66302-3810-4b93-a8ba-56c29897fb7d.png)
+![admin-login@1x](https://user-images.githubusercontent.com/71889035/156666274-22cceea0-e9c2-47d1-ad89-2d09a4a67054.png)
+
+
+### Usabilidad Rellenar mañana plz que ahora necesito descansar porque son las 11 y mis ojos gritan
 
 
 
