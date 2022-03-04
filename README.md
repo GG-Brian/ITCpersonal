@@ -5,9 +5,11 @@
 3. [Manual de preparación y uso del proyecto](#manual-de-preparativos-y-uso-del-proyecto)
 4. [Manual simple del usuario](#manual-simple-del-usuario)
 5. [Manual del desarrollador de Play!](#manual-del-desarrollador-de-play-framework)
-6. [Planificación y organización](#planificacion-y-organizacion)
-7. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
-8. [Enlaces y referencias](#enlaces-y-referencias)
+6. [Base de datos; Descripción, modelos, diagramas y casos de uso](#base-de-datos-caracteristicas-relevantes)
+7. [Usabilidad; Prototipo y diseño gráfico](#proyecto-prototipo-y-aspectos-de-usabilidad)
+8. [Planificación y organización](#planificacion-y-organizacion)
+9. [Conclusiones, opiniones y reflexiones](#conclusiones-opiniones-y-reflexiones)
+10. [Enlaces y referencias](#enlaces-y-referencias)
 
 
 # Introduccion
@@ -17,9 +19,9 @@ ITCpersonal trata de un repositorio con un proyecto auxiliar (colaboracion) basa
 
 La idea detrás de este proyecto, realizado por Brian García Gómez y Alvaro Carreras Motas, comprende de un set de páginas web para manipular de forma gráficamente amigable y completa una base de datos con tres tablas interrelacionadas y un chat local totalmente funcional.
 
-La necesiad detrás de este proyecto es porque necesitamos hacer un proyecto que pueda ser valorado por el profesorado del centro IES El Rincón. La necesidad detrás del proyecto del cuál este proyecto está basado es la de proporcionar formularios de convocatorias a subvenciones las cuales están registradas en la base de datos propia del ITC.
+La necesidad detrás de este proyecto es la de desarrollar un proyecto que pueda ser valorado por el profesorado del centro IES El Rincón. La necesidad detrás del proyecto del cuál este proyecto está basado es la de proporcionar formularios de convocatorias a subvenciones las cuales están registradas en la base de datos propia del ITC.
 
-Como apartado extra, este proyecto también fue creado con la conveniencia de aprender a utilizar Play! junto al generador de código del Gobierno de Canarias (el cuál se denomina FAP), puesto que el verdadero proyecto hace uso de ambos para funcionar.
+Como apartado extra, este proyecto también fue creado con la conveniencia de aprender a utilizar Play! junto al generador de código del Gobierno de Canarias (cuyas siglas son F.A.P.), puesto que el verdadero proyecto utiliza ambas tecnologías para funcionar.
 
 
 # Requisitos de usuario
@@ -142,6 +144,113 @@ He experimentado problemas en cuanto a llamadas a diferentes recursos en el mism
 * Por ejemplo, la etiqueta HTML que viene por defecto de Play! que define la ubicación del fichero de estilos 'link rel="stylesheet" media="screen" href="@{'/public/stylesheets/(nombre fichero css)'}' da error si no elimino la parte 'media="screen"'.
 
 * Para el tema de imagen, investigué por unas 5 horas para ver como mostrar una imagen, y tras muchos intentos descubrí que la forma explicada en la web no funcionaba para mi, pero un híbrido entre la forma más encontrada y la de javascript vanilla sí. Para aquellos que tampoco saben como, esta fue mi solución; 'img src="@{'/public/images/(imagen y extensión)'}"/'.
+
+
+
+# Base de datos caracteristicas relevantes
+------------------------------------------
+
+### Descripción
+
+La base de datos se denomina 'subvencion' y contiene 5 tablas internas, cada una con sus respectivas columnas;
+
+* User - Discrimina usuarios por permiso a secciones de web cuyos datos a manipular son más concretos, únicos y sensibles:
+* * id     - Identificación única de usuario.
+* * nombre - Nombre completo del usuario.
+* * firma  - Clave de acceso encriptada obtenida de la identificación previa de un usuario como individuo físico (más información en https://firmaelectronica.gob.es/)
+* * rol    - Define el poder administrativo del usuario; Administrador o usuario regular.
+
+* Informacion (Datos de convocatoria (usuarios afiliados a esta información se tratan en la tabla 'Rellena')):
+* * id                 - Identificador único de datos de convocatoria.
+* * familiaNumerosa    - Campo booleano (true/false) para indicar si la familia del usuario afiliado es numerosa.
+* * familiaNumerosaPdf - Campo para archivos PDF que acrediten el estado de familia numerosa.
+* * discapacidad       - Valor true/false para indicar si el usuario afiliado presenta dificultades mentales y/o motrices.
+* * discapacidadPdf    - Campo para archivos PDF que acrediten las dificultades mentales y/o motrices del usuario afiliado.
+* * rentaPdf           - Campo para archivos PDF que informen sobre la renta económica del usuario afiliado.
+* * Estudios           - Campo de texto indicativo del nivel de estudios que el usuario afiliado va a cursar.
+
+* Datos_personales (Información sensible identificativo de persona física (usuarios asociados son tratados en la tabla 'Tiene')):
+* * id        - Identificador único de los datos.
+* * nombre    - Campo de texto cuyo contenido hace ilusión al primer sustantivo propio identificativo de un ser humano.
+* * apellido1 - Campo de texto cuyo contenido hace ilusión al segundo sustantivo propio identificativo de un ser humano.
+* * apellido2 - Campo de texto cuyo contenido hace ilusión al tercer sustantivo propio identificativo de un ser humano.
+* * dni       - Campo de ocho números y una letra que identifican a un ser humano como persona física de un territorio.
+* * correo    - Campo de texto con dirección de correo electrónico perteneciente al usuario al que se le asocian estos datos.
+* * tlf       - Campo numérico que hace referencia a un número de teléfono por el que se puede contactac al usuario asociado.
+
+* Tiene (Tabla de asociación entre registros de tabla User y Datos_personales):
+* * idUser  - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+* * idDatos - Campo de clave ajena a la clave primaria de Datos_Personales (id, usada como identificación de serie de datos único)
+
+* Rellena (Tabla de asociación entre registros de tabla User e Informacion):
+-- idUser - Campo de clave ajena a la clave primaria de User (id, usada como identificación de usuario único)
+-- idInfo - Campo de clave ajena a la clave primaria de Informacion (id, usada como identificación de conocatoria único)
+
+
+### Modelos
+
+En el esquema relacional inferior se puede apreciar como se interrelacionan las tablas de la base de datos y los tipos de datos que se guardan en su interior (versión desactualizada por el cambio de dato de String a boolean en ciertos campos de Informacion)
+
+![image](https://user-images.githubusercontent.com/71889035/156456833-140a6aa7-31b3-4eef-9ba4-d676278fa260.png)
+
+
+### Diagrama de datos Entidad-Relación
+
+En el diagrama inferior se puede apreciar las relaciones entre tablas a modo de entidades y de aquellas entidades-relaciones, junto a sus respectivas columnas, indicando de forma breve que cada serie de datos personales es asociada a uno y solo a un usuario, y un usuario rellena uno, y solo un formulario de convocatoria.
+
+![image](https://user-images.githubusercontent.com/71889035/156457450-4c7b9170-226e-4fdd-9cad-445efcb4e423.png)
+
+
+### Casos de uso
+
+En lo que respecta a usuarios con acceso a la base de datos, solo existen dos tipos de usuarios; Usuario regular y Admin.
+
+Cada uno tiene acciones que se le permite, y uno tiene mayor poder administrativo que el otro, todo para preveér el mejor mantenimiento y cuidado posible sobre la base de datos en general.
+
+Existe un tercer usuario no considerado en la siguiente imagen explicativa de casos de uso, puesto que un usuario no registrado no debería poder realizar acciones en una página de convocatorias a menos de haberse identificado (y así guardar sus datos, y que sola y exclusivamente acceda a sus propios datos).
+
+![image](https://user-images.githubusercontent.com/71889035/156458008-56dca81c-3033-4ecd-8a94-c54aa83571f3.png)
+
+
+
+# Proyecto prototipo y aspectos de usabilidad
+---------------------------------------------
+
+En la raiz de este repositorio se encuentra el archivo 'Prototipo itcpersonal', creado a partir de la herramienta de creación de interfaz gráfica denominada Justinmind.
+
+Dicho archivo contiene 10 páginas gráficas, las cuales conforman el set de páginas web del proyecto propio.
+
+
+### Prototipo; Principal
+
+El set de páginas web comienza a partir de la siguiente página web, dando la información principal de sobre datos sensibles y convocatorias relacionadas con del Gobierno de Canarias y su sede de servicios;
+
+![Principal@1x](https://user-images.githubusercontent.com/71889035/156664182-18ca9523-6f4b-40d0-829b-be0b753a08ae.png)
+
+
+### Prototipo; convocatorias de subvencion
+
+Las siguientes páginas web pertenecen a un subset, las cuales se encargan de manejar las convocatorias (en el caso de que el usuario quiera realizar dichas convocatorias por aquí en vez de a través de la sede de servicios del Gobierno de Canarias) y los datos personales del usuario;
+
+![subvencion-info@1x](https://user-images.githubusercontent.com/71889035/156665123-1c2beb81-7933-40bb-ac70-34e10438e207.png)
+![subvencion-datos@1x](https://user-images.githubusercontent.com/71889035/156665147-2ff0574f-f59d-4b6e-acbe-bdf9535e6bec.png)
+![subvencion-requisitos@1x](https://user-images.githubusercontent.com/71889035/156665155-b2159294-84fa-4de0-9419-98cb66aed7a9.png)
+![subvencion-firma@1x](https://user-images.githubusercontent.com/71889035/156665159-ab44a03d-d0b5-4597-849c-fd30c97b0768.png)
+
+
+### Prototipo; Gestión administrativa de la base de datos y datos sensibles
+
+Las siguientes páginas web pertenecen a un subset, las cuales se encargan de manejar datos de la base de datos subvencion, una de ellas requeriendo acceso a través de credenciales que deben haber sido registradas previamente (más información en el manual del desarrollador);
+
+![admin-general@1x](https://user-images.githubusercontent.com/71889035/156666242-76e0adb2-9690-430a-a77f-3fa33d5aa8b0.png)
+![admin-reading@1x](https://user-images.githubusercontent.com/71889035/156666229-c8fc9d50-f4d9-40df-be9a-73f9a82332c2.png)
+![admin-addition@1x](https://user-images.githubusercontent.com/71889035/156666253-368fb8ea-efa6-470f-80ba-d8a834f0613e.png)
+![admin-edition-deletion@1x](https://user-images.githubusercontent.com/71889035/156666257-23f66302-3810-4b93-a8ba-56c29897fb7d.png)
+![admin-login@1x](https://user-images.githubusercontent.com/71889035/156666274-22cceea0-e9c2-47d1-ad89-2d09a4a67054.png)
+
+
+### Usabilidad Rellenar mañana plz que ahora necesito descansar porque son las 11 y mis ojos gritan
+
 
 
 
