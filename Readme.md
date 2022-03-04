@@ -249,7 +249,57 @@ Las siguientes páginas web pertenecen a un subset, las cuales se encargan de ma
 ![admin-login@1x](https://user-images.githubusercontent.com/71889035/156666274-22cceea0-e9c2-47d1-ad89-2d09a4a67054.png)
 
 
-### Usabilidad Rellenar mañana plz que ahora necesito descansar porque son las 11 y mis ojos gritan
+### Aspectos de usabilidad; Lista de aspectos considerados y justificación
+
+Este es el listado de las opciones tenidas en cuenta a la hora de crear y desarrollar el proyecto;
+
+* Útil              - Capaz de cumplir las tareas específicas por las que fue diseñado.
+* Fácil de usar     - Eficiente, veloz y con menor cantidad de errores posibles. Cómoda de utilizar.
+* Fácil de aprender - No se requiere de mucho tiempo en aprender su funcionalidad, sea fácil de recordar y entender.
+* Eficiente         - Se mide el esfuerzo para conseguir un objetivo y se consigue un balance adecuado para el usuario.
+* Ofrece beneficios - La funcionalidad de la aplicación posée una recompensa por su correcto uso.
+* Simplicidad       - Se evade en la medida de lo posible que el proyecto tenga un aspecto 'sobrecargado'.
+
+* El usuario es capaz de iniciar acciones
+* El usuario es capaz de interactuar con la aplicación
+* Estética de diseño; Los atributos visuales concentran la atención del usuario y un entorno agradable facilida el entendimiento
+* Simplicidad del diseño; Información mínima imprescindible e interfaz SIMPLE y Fácil de aprender y recordar.
+
+* Diseño visual - Un buen diseño visual se centra en aumentar la comunicación.
+* Color         - Conjunto de colores mínimos y apropiados aplicados, y uso de colores apagados, sutiles y complementarios.
+* Disposición de formularios; Localización visual de componentes limpia, crea un flujo visual de datos sin problemas al usuario.
+
+* Familiaridad del usuario - Ambiente flexible para el rápido aprendizaje del usuario, términos adecuados para aquellos que usan esta aplicación.
+* Consistencia - Operaciones similares se activan de la misma forma. Ergonomía presente mediante menús, barra de acciones e iconos de fácil acceso e identificación.
+* Mínima sorpresa - El comportamiento de la aplicación no provoca sorpresa a los usuarios.
+
+Todos los aspectos mencionados tienen el mismo objetivo, hacer de esta aplicación lo más dinámica, atractiva, cómoda y simple posible, que los usuarios que desean consultar y/o rellenar convocatorias del Gobierno de Canarias se sientan bienvenidos.
+
+
+### Aspectos de usabilidad; Proceso de estudio de usuabilidad seguido.
+
+Habíamos sido comunicado sobre la idea principal del proyecto sobre el cuál este proyecto está basado; Subvenciones y formulario de convocatorias.
+
+El tema de subvenciones y convocatorias ha sido siempre algo muy oficial del Gobierno de Canarias, y como es típico de las cosas más oficiales, leer textos sobre políticas o mera información del trato de datos es algo que a muchos se les ha hecho imposible, comentando incluso que 'no parece que el texto esté en español'.
+
+Los aspectos de usabilidad que queremos conseguir a partir de esto se ve muy claro (y es visible desde el prototipo de este proyecto); Hacer de convocatorias, subvenciones y formularios algo fácil de entender y manejar, con interfaz lo más simple y amigable posible.
+
+- Consideramos que este proyecto debe tener una muy buen diseñada página de entrada que explique nuestra idea con claridad y proporcionar enlaces de ayuda y/o hacia otras secciones de la misma página web.. y a partir de ahí, dividirse según el deseo del individuo (hacer convocatorias, rellenar datos personales o gestionar datos oficiales de nuestra base de datos).
+
+
+### Aspectos de usabilidad; Interfaz gráfica finalmente desarrollada
+
+Un set de poco más de 12 páginas web fueron creados al final del desarrollo de esta aplicación. Estas páginas web, junto a aquellos aspectos de usabilidad que cumplen, son las siguientes;
+
+#### Pagina principal
+
+Cumple los aspectos de usabilidad..;
+* El usuario es capaz de iniciar acciones
+* El usuario es capaz de interactuar con la aplicación
+
+![principal](https://user-images.githubusercontent.com/71889035/156693562-b84a0614-2294-4c20-bd30-136aafd60143.PNG)
+
+
 
 
 
