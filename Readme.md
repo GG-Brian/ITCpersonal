@@ -259,19 +259,20 @@ Este es el listado de las opciones tenidas en cuenta a la hora de crear y desarr
 * Eficiente         - Se mide el esfuerzo para conseguir un objetivo y se consigue un balance adecuado para el usuario.
 * Ofrece beneficios - La funcionalidad de la aplicación posée una recompensa por su correcto uso.
 * Simplicidad       - Se evade en la medida de lo posible que el proyecto tenga un aspecto 'sobrecargado'.
-
+--
 * El usuario es capaz de iniciar acciones
 * El usuario es capaz de interactuar con la aplicación
 * Estética de diseño; Los atributos visuales concentran la atención del usuario y un entorno agradable facilida el entendimiento
 * Simplicidad del diseño; Información mínima imprescindible e interfaz SIMPLE y Fácil de aprender y recordar.
-
+--
 * Diseño visual - Un buen diseño visual se centra en aumentar la comunicación.
 * Color         - Conjunto de colores mínimos y apropiados aplicados, y uso de colores apagados, sutiles y complementarios.
 * Disposición de formularios; Localización visual de componentes limpia, crea un flujo visual de datos sin problemas al usuario.
-
+--
 * Familiaridad del usuario - Ambiente flexible para el rápido aprendizaje del usuario, términos adecuados para aquellos que usan esta aplicación.
 * Consistencia - Operaciones similares se activan de la misma forma. Ergonomía presente mediante menús, barra de acciones e iconos de fácil acceso e identificación.
 * Mínima sorpresa - El comportamiento de la aplicación no provoca sorpresa a los usuarios.
+--
 
 Todos los aspectos mencionados tienen el mismo objetivo, hacer de esta aplicación lo más dinámica, atractiva, cómoda y simple posible, que los usuarios que desean consultar y/o rellenar convocatorias del Gobierno de Canarias se sientan bienvenidos.
 
