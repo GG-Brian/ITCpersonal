@@ -262,7 +262,7 @@ Este es el listado de las opciones tenidas en cuenta a la hora de crear y desarr
 ----------------------------------------------------------------------------------------------------------
 * El usuario es capaz de iniciar acciones
 * El usuario es capaz de interactuar con la aplicación
-* Estética de diseño; Los atributos visuales concentran la atención del usuario y un entorno agradable facilida el entendimiento
+* Estética de diseño; Los atributos visuales concentran la atención del usuario y un entorno agradable facilita el entendimiento
 * Simplicidad del diseño; Información mínima imprescindible e interfaz SIMPLE y Fácil de aprender y recordar.
 -------------------------------------------------------------------------------------------------------------
 * Diseño visual - Un buen diseño visual se centra en aumentar la comunicación.
@@ -294,14 +294,89 @@ Un set de poco más de 12 páginas web fueron creados al final del desarrollo de
 
 #### Pagina principal
 
-Cumple los aspectos de usabilidad..;
+En resumen, es una página de bienvenida y consulta de información sobre convocatorias, entre otros. Su contenido fue ignorado, ya que este aspecto resultaba ser menos urgente que otros criterios de evaluación del docente del centro IES El Rincón.
+
+Esta página cumple los aspectos de usabilidad siguientes;
 * El usuario es capaz de iniciar acciones
 * El usuario es capaz de interactuar con la aplicación
 
 ![principal](https://user-images.githubusercontent.com/71889035/156693562-b84a0614-2294-4c20-bd30-136aafd60143.PNG)
 
 
+#### Página con chat funcional
 
+Página cuyo propósito principal es el de abrir una vía de comunicación entre clientes y moderadores. El estilo del contenido no fue diseñado, ya que este aspecto resultaba ser menos urgente que otros criterios de evaluación del docente del centro IES El Rincón.
+
+Esta página cumple los aspectos de usabilidad siguientes;
+* Útil              - El chat es completamente funcional de forma local abriendo la misma ventana por separado.
+* Fácil de usar     - Proporciona la operación básica de enviar un mensaje y que éste pueda ser visible desde otro lado (en este caso, otra ventana abierta).
+* Fácil de aprender - Un usuario no necesita aprender nada nuevo, el funcionamiento de un chat básico es internacionalmente conocido.
+* Eficiente         - El balance entre esfuerzo y recompensa es balanceado; El usuario escribe un mensaje y, en un solo click, lo envía.
+* Ofrece beneficios - El mensaje que se puede enviar lo puede recibir otro monitor conectado al dispositivo y viceversa entre monitores y ventanas.
+* Simplicidad       - Como literalmente solo permite enviar y ver mensajes, no posée sobrecarga gráfica alguna.
+* El usuario es capaz de iniciar acciones (enviar mensajes y verlos).
+* El usuario es capaz de interactuar con la aplicación (definiendo los mensajes a enviar).
+* Simplicidad de diseño    - Información mínima imprescindible (historial de mensajes y botones de acciones y definición de mensajes), simple, fácil de aprender y recordar.
+* Familiaridad del usuario - Las posiciones de los distintos elementos que conforman el chat proporciona una experiencia muy familiar internacionalmente para su correcto uso.
+* Mínima sorpresa          - Es un chat extremadamente básico que utilica codificación UTF-8, así que incluso las tildes no invocarán un error en la ejecución de la aplicación.
+
+![chat](https://user-images.githubusercontent.com/71889035/156698285-c6d64f90-4db1-4390-b7da-54875ba38046.PNG)
+
+
+#### Páginas de datos y convocatorias;
+
+Debido a su naturaleza, en esta documentación se mostrarán cuatro páginas web en conjunto.
+
+Las siguientes páginas web cumplen los siguientes aspectos de usabilidad;
+* Útil              - Parte de este set fue creado para la consulta de información.
+* Fácil de usar     - La estructura utilizada es común y popularmente cómoda de gestionar para usuarios en la red.
+* Fácil de aprender - Debido a su barra vertical de menú y aspecto simple, resulta fácil de aprender y recordar las acciones de cada opción.
+* Eficiente         - El esfuerzo requerido en cada pagina web de esta sección es mínimo e intuitivo; No conlleva mucho trabajo físico y/o mental.
+* Ofrece beneficios - Este set de páginas web tiene como prioridad permitir rellenar convocatorias en vez de hacerlo a través de su lugar oficial.
+* Simplicidad       - Se evade en la medida de lo posible que el proyecto tenga un aspecto 'sobrecargado'.
+* El usuario es capaz de iniciar acciones (detalladas en las páginas en las que esto se permite, como la confirmación mediante presión de un botón).
+* El usuario es capaz de interactuar con la aplicación.
+* Estética de diseño; Los atributos visuales concentran la atención del usuario y un entorno agradable facilita el entendimiento.
+* Simplicidad del diseño; Información mínima imprescindible e interfaz SIMPLE y Fácil de aprender y recordar.
+* Diseño visual - Un buen diseño visual se centra en aumentar la comunicación.
+* Color         - Conjunto de colores mínimos y apropiados aplicados, y uso de colores apagados, sutiles y complementarios.
+* Disposición de formularios; Localización visual de componentes limpia, crea un flujo visual de datos sin problemas ni sobrecarga para el usuario.
+* Familiaridad del usuario - Ambiente familiar para el rápido aprendizaje y gestión por parte del usuario.
+* Consistencia - Operaciones similares (ver convocatorias, rellenar datos para estas, etc..) se activan de igual forma. Ergonomía presente mediante el menú vertical izquierdo.
+
+![subvencion-informacion](https://user-images.githubusercontent.com/71889035/156695876-441b3926-7b5a-4280-84e1-87a72b861f53.PNG)
+![subvencion-userdata](https://user-images.githubusercontent.com/71889035/156695900-12e307c2-e6d4-414d-8109-d041595fee6e.PNG)
+![subvencion-convo-requisites](https://user-images.githubusercontent.com/71889035/156695919-0306edbe-d567-4236-a750-188ce25fd0fa.PNG)
+![subvencion-autofirma](https://user-images.githubusercontent.com/71889035/156695924-ffef1f15-5617-4aa2-8403-94a2ee591e78.PNG)
+
+
+#### Páginas de acceso y gestión de datos sensibles de base de datos 'subvencion';
+
+Debido a su naturaleza, en esta documentación se mostrarán seis páginas web en conjunto.
+
+Las siguientes páginas web cumplen los siguientes aspectos de usabilidad;
+* Útil              - El acceso y la administración de datos sensibles es certera y eficiente.
+* Fácil de usar     - Aunque la interfaz gráfica no hace uso de gráficos muy populares, resulta moderadamente intuitivo y fácil de utilizar.
+* Fácil de aprender - La forma en la que están estructuradas resultan en una interfaz amigable e intuitiva, lo que ayuda en gran medida a su veloz aprendizaje.
+* Eficiente         - La gestión es extremadamente simple e intuitiva, por lo que llegar al objetivo de leer, crear, editar y eliminar datos es muy fácil.
+* Ofrece beneficios - Las operaciones realizadas a través de la interfa se reflejan en la base de datos a la que está relacionada (en este caso, mariadb).
+* El usuario es capaz de iniciar acciones (como pueden ser las operaciones básicas del CRUD (Crear, Leer, Actualizar y Eliminar datos de tablas).
+* El usuario es capaz de interactuar con la aplicación (Una vez que éste se haya identificado, se le permite gestionar la base de datos como desée).
+* Estética de diseño; Los elementos visuales concentran la atención del usuario y un entorno agradable facilita el entendimiento para la buena gestión de datos.
+* Simplicidad del diseño; La información mostrada es únicamente la imprescindible, las interfaces son bastante simples y su estructura resulta fácil de aprender y recordar.
+* Diseño visual - Su buen diseño visual y formal se centra en aumentar la comunicación, indicando en cada momento al usuario qué acciones está realizando.
+* Color         - Conjunto de colores mínimos y apropiados aplicados, y uso de colores apagados, sutiles y complementarios.
+* Disposición de formularios; Localización visual de componentes buenamente limpia, crea un flujo visual de datos sin problemas al usuario.
+* Familiaridad del usuario - Ambiente con aspecto 'empresarial' bien conocido para el rápido aprendizaje del usuario, términos adecuados para aquellos que usan esta aplicación.
+* Consistencia - Operaciones similares se activan de la misma forma. Ergonomía presente barra de acciones (ubicación de gestión) e iconos de fácil acceso e identificación.
+* Mínima sorpresa - El comportamiento de la aplicación está preparado y automatizado, dificilmente provocará alguna sorpresa a los usuarios.
+
+![admin-principal](https://user-images.githubusercontent.com/71889035/156700387-b7a07779-dfb0-4699-8642-2f585c21caeb.PNG)
+![admin-login-credentials](https://user-images.githubusercontent.com/71889035/156700405-2d307965-55f3-442a-b3e1-a794fac94316.PNG)
+![admin-database-table-reading](https://user-images.githubusercontent.com/71889035/156700415-90d775f3-ad22-4797-9ef6-cdc7bcf412d7.PNG)
+![admin-database-table-addition](https://user-images.githubusercontent.com/71889035/156700422-0350621a-3512-46e2-b6c9-03109778d63d.PNG)
+![admin-database-table-edition](https://user-images.githubusercontent.com/71889035/156700428-6753f89d-e46d-41fb-9131-249f185df1be.PNG)
+![admin-database-table-deletion](https://user-images.githubusercontent.com/71889035/156700437-9fd54210-cd76-46a5-9b85-05d2d39abcbb.PNG)
 
 
 
